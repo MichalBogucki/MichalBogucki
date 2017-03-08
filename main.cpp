@@ -1,6 +1,8 @@
 #include <iostream>
+#include "funZ.h"
 using namespace std;
 
+string funZ (string str);
 
 int main()
 {
@@ -11,8 +13,10 @@ int main()
     cin >> surname;
     cout << "Write nickname: ";
     cin >> nickname;
-    cout << endl <<"Output: " << name <<" " << nickname << " " << surname << " " << endl << endl << endl;
+    
 
+output = funZ(name) + " " + funZ(surname) + " " + funZ(nickname);
+    cout << "Output Z: "  << output << endl;
     
     return 0;
 }//int main()

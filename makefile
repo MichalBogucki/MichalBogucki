@@ -3,7 +3,7 @@ __start__: main.exe
 main.exe : main.o 
 	g++ main.o -o main.exe
 
-main.o : main.cpp 
+main.o : main.cpp funZ.h 
 	g++ -c main.cpp
 
 release: main.cpp
