@@ -1,8 +1,8 @@
 #include <iostream>
-#include "funZ.h"
+#include "funRev.h"
 using namespace std;
 
-string funZ (string str);
+string funRev (string str);
 
 int main()
 {
@@ -14,10 +14,10 @@ int main()
     cout << "Write nickname: ";
     cin >> nickname;
     
+    output = funRev(name) + " " + funRev(surname) + " " + funRev(nickname);
+    cout << "Output Rev: "  << output << endl;
 
-output = funZ(name) + " " + funZ(surname) + " " + funZ(nickname);
-    cout << "Output Z: "  << output << endl;
-    
+
     return 0;
 }//int main()
 
